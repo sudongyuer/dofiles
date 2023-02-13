@@ -66,6 +66,9 @@ noremap L $
 " d: diff
 nmap <leader>dd <action>(Vcs.ShowTabbedFileHistory)
 
+" == Format Hole File(Before is format current line)
+nmap == <action>(ReformatCode)
+
 " f: Find/Format ⭐️
 let g:WhichKeyDesc_FindOrFormat = "<leader>f FindOrFormat"
 let g:WhichKeyDesc_FindOrFormat_FindFile = "<leader>ff FindFile"
@@ -130,7 +133,7 @@ map <leader>rn <action>(RenameElement)
 
 " w: Window ⭐️
 let g:WhichKeyDesc_Windows = "<leader>w Windows"
-let g:WhichKeyDesc_Windows_maximize = "<leader>wo maximize"
+let g:WhichKeyDesc_Windows_maximize = "<leade>wo maximize"
 nmap <leader>wo <action>(UnsplitAll) \| <action>(HideAllWindows)
 let g:WhichKeyDesc_Windows_splitWindowVertically = "<leader>wl splitWindowVertically"
 nmap <leader>wl <action>(Macro.SplitVertically)
